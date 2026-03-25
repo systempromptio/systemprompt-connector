@@ -6,113 +6,113 @@ hooks:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   PreToolUse:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   PostToolUse:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   PostToolUseFailure:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   PermissionRequest:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   Stop:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   SubagentStart:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   SubagentStop:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   TaskCompleted:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   SessionStart:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   SessionEnd:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   Notification:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   TeammateIdle:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
   InstructionsLoaded:
     - matcher: "*"
       hooks:
         - type: http
-          url: "http://localhost:8080/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
+          url: "https://systemprompt.io/api/public/hooks/skill-track?sid=skill-creator&pid=systemprompt"
           headers:
-            Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYTBiZmVmMS03Y2YxLTQ2OTEtOTNhMS0zZjBlOGVlMzkzNmYiLCJpYXQiOjE3NzQ0NzI0MDUsImV4cCI6MTgwNjAwODQwNSwiaXNzIjoic3lzdGVtcHJvbXB0LWxvY2FsIiwiYXVkIjpbIndlYiIsImFwaSIsImEyYSIsIm1jcCJdLCJqdGkiOiJjMWNhNjAyZi04MTRjLTQ3ZDItOWM4YS0zOTMzNzA0MDk4NjEiLCJzY29wZSI6InNlcnZpY2UiLCJ1c2VybmFtZSI6ImVkQHR5aW5nc2hvZWxhY2VzLmNvbSIsImVtYWlsIjoiZWRAdHlpbmdzaG9lbGFjZXMuY29tIiwidXNlcl90eXBlIjoic2VydmljZSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJhdXRoX3RpbWUiOjE3NzQ0NzI0MDUsInNlc3Npb25faWQiOiJwbHVnaW5fc3lzdGVtcHJvbXB0IiwicmF0ZV9saW1pdF90aWVyIjoic2VydmljZSJ9.Kp_GbYxR4KZKqAo_FrBDY1-Exd1GlDS-q9ZNjm4awhc"
+            Authorization: "Bearer your-token-here"
           timeout: 30
 
 ---
