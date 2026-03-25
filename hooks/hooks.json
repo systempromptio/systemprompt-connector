@@ -1,0 +1,199 @@
+{
+  "hooks": {
+    "SubagentStop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "TaskCompleted": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "TeammateIdle": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "https://systemprompt.io/api/public/hooks/track",
+            "headers": {
+              "Authorization": "Bearer your-token-here"
+            },
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

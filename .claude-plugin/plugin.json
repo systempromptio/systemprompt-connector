@@ -1,0 +1,10 @@
+{
+  "name": "systemprompt-connector",
+  "description": "Connect to systemprompt.io — install this plugin, then run /sync-skills to sync your marketplace",
+  "version": "1.0.0",
+  "author": {
+    "name": "systemprompt.io",
+    "email": "ed@systemprompt.io"
+  },
+  "hooks": "./hooks/hooks.json"
+}
