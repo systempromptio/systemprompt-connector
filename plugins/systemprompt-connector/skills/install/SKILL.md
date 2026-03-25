@@ -1,6 +1,6 @@
 ---
-name: sync-skills
-description: "Sync your systemprompt.io marketplace plugins, skills, agents, and hooks to your local environment"
+name: install
+description: "Install and sync your systemprompt.io marketplace plugins, skills, agents, and hooks to your local environment"
 ---
 
 # Sync Skills
