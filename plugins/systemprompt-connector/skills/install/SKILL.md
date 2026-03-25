@@ -5,7 +5,7 @@ description: "Install and sync your systemprompt.io marketplace plugins, skills,
 
 # Install systemprompt.io
 
-Sync all plugins from your systemprompt.io marketplace to your local environment using the **skill-manager** MCP server.
+Sync your complete marketplace from systemprompt.io to your local environment using the **skill-manager** MCP server.
 
 ## Instructions
 
@@ -18,21 +18,36 @@ Sync all plugins from your systemprompt.io marketplace to your local environment
    }
    ```
 3. The tool returns a JSON bundle containing:
-   - `base_path` — where plugins are installed (e.g. `~/.claude/plugins` or `~/.cowork/plugins`)
-   - `plugins` — array of plugin bundles, each with `directory` and `files`
-4. For each plugin, for each file:
-   - Resolve the full path: `{base_path}/{plugin.directory}/{file.path}`
+   - `base_path` — the marketplaces directory (e.g. `~/.cowork/plugins/marketplaces`)
+   - `marketplace_file` — the marketplace manifest (`.claude-plugin/marketplace.json`)
+   - `plugins` — array of plugin bundles, each with files already nested under `plugins/{id}/`
+4. Write all files relative to `{base_path}/systemprompt-marketplace/`:
+   - First write the marketplace manifest: `{base_path}/systemprompt-marketplace/{marketplace_file.path}`
+   - Then for each plugin, write each file: `{base_path}/systemprompt-marketplace/{file.path}`
    - Expand `~` to the user's actual home directory
    - Create parent directories with `mkdir -p`
-   - Write the file content
    - On macOS/Linux, `chmod +x` files where `executable` is true
 5. Report what was synced: number of plugins, skills, agents, and hooks updated
 
+## Result structure
+
+After install, the local marketplace looks like:
+```
+{base_path}/systemprompt-marketplace/
+  .claude-plugin/marketplace.json
+  plugins/systemprompt/.claude-plugin/plugin.json
+  plugins/systemprompt/skills/...
+  plugins/systemprompt/hooks/hooks.json
+  plugins/{other-plugin-id}/...
+```
+
+This matches the exact structure Cowork and Claude Code expect for marketplace installations.
+
 ## What this does
 
-- Pulls all your marketplace plugins (skills, agents, MCP configs)
-- Writes hooks with your authenticated token so analytics tracking works
-- Overwrites existing plugin files — this is expected, it keeps everything in sync
+- Writes a complete marketplace with all your plugins (skills, agents, MCP configs)
+- Hooks are written with your authenticated token so analytics tracking works
+- Overwrites existing marketplace files — this keeps everything in sync with the remote
 
 ## Troubleshooting
 
