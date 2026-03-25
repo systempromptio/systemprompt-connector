@@ -46,9 +46,11 @@ This is the exact structure Cowork and Claude Code expect for installed marketpl
 ## What gets installed
 
 - All your remote plugins with their skills, agents, and MCP server configs
-- Hooks configured with your authenticated token for analytics tracking
-- Plugin environment files with your API credentials
+- **Hooks with your authenticated token** — the remote server generates hooks pre-configured with your personal JWT token, so analytics tracking works immediately without manual configuration
+- Plugin environment files (`.env.plugin`) with your token and API URL
 - The marketplace manifest that ties all plugins together
+
+This is critical: the hooks returned by the MCP server contain your real token. Writing these files locally is what activates session tracking, tool usage analytics, and all other hook-based features for your account.
 
 Re-run `/install` any time to pull the latest changes from your remote marketplace.
 
