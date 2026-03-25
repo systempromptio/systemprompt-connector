@@ -1,11 +1,11 @@
 ---
 name: install
-description: "Install and sync your systemprompt.io marketplace plugins, skills, agents, and hooks to your local environment"
+description: "Download your remote systemprompt.io marketplace and install it locally as a complete marketplace with all plugins, skills, agents, and hooks"
 ---
 
-# Install systemprompt.io
+# Install Remote Marketplace
 
-Sync your complete marketplace from systemprompt.io to your local environment using the **skill-manager** MCP server.
+Download your remote systemprompt.io marketplace and install it locally. This pulls all your plugins, skills, agents, hooks, and MCP server configs from the remote server and writes them to your local marketplace directory so Cowork or Claude Code can use them.
 
 ## Instructions
 
@@ -17,21 +17,21 @@ Sync your complete marketplace from systemprompt.io to your local environment us
      "client": "<detected client>"
    }
    ```
-3. The tool returns a JSON bundle containing:
-   - `base_path` — the marketplaces directory (e.g. `~/.cowork/plugins/marketplaces`)
+3. The tool returns a complete marketplace bundle from the remote server containing:
+   - `base_path` — the local marketplaces directory (e.g. `~/.cowork/plugins/marketplaces`)
    - `marketplace_file` — the marketplace manifest (`.claude-plugin/marketplace.json`)
-   - `plugins` — array of plugin bundles, each with files already nested under `plugins/{id}/`
+   - `plugins` — array of plugin bundles, each with files nested under `plugins/{id}/`
 4. Write all files relative to `{base_path}/systemprompt-marketplace/`:
    - First write the marketplace manifest: `{base_path}/systemprompt-marketplace/{marketplace_file.path}`
    - Then for each plugin, write each file: `{base_path}/systemprompt-marketplace/{file.path}`
    - Expand `~` to the user's actual home directory
    - Create parent directories with `mkdir -p`
    - On macOS/Linux, `chmod +x` files where `executable` is true
-5. Report what was synced: number of plugins, skills, agents, and hooks updated
+5. Report what was installed: number of plugins, skills, agents, and hooks written
 
-## Result structure
+## Result
 
-After install, the local marketplace looks like:
+After install, your local marketplace mirrors your remote systemprompt.io marketplace:
 ```
 {base_path}/systemprompt-marketplace/
   .claude-plugin/marketplace.json
@@ -41,15 +41,17 @@ After install, the local marketplace looks like:
   plugins/{other-plugin-id}/...
 ```
 
-This matches the exact structure Cowork and Claude Code expect for marketplace installations.
+This is the exact structure Cowork and Claude Code expect for installed marketplaces.
 
-## What this does
+## What gets installed
 
-- Writes a complete marketplace with all your plugins (skills, agents, MCP configs)
-- Hooks are written with your authenticated token so analytics tracking works
-- Overwrites existing marketplace files — this keeps everything in sync with the remote
+- All your remote plugins with their skills, agents, and MCP server configs
+- Hooks configured with your authenticated token for analytics tracking
+- Plugin environment files with your API credentials
+- The marketplace manifest that ties all plugins together
+
+Re-run `/install` any time to pull the latest changes from your remote marketplace.
 
 ## Troubleshooting
 
 - If the skill-manager MCP server is not connected, check that `SYSTEMPROMPT_PLUGIN_TOKEN` is set correctly in your plugin environment settings
-- You can re-run `/install` at any time to sync the latest changes from your marketplace
